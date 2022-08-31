@@ -4,11 +4,15 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+import com.example.chatapp.databinding.ActivityResetPasswordBinding;
+
 public class ResetPasswordActivity extends AppCompatActivity {
+    ActivityResetPasswordBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_reset_password);
+        binding = ActivityResetPasswordBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
     }
 }
